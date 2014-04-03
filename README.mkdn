@@ -1,0 +1,16 @@
+Nameless Vendor Hack
+====================
+
+Why?
+----
+
+Since we are just a small group of Android lovers we ca not maintain all devices we want.
+
+How?
+----
+
+Copy build.sh in main source folder
+
+now call ./build.sh [codename]
+
+dont forget the vendor blobs.
