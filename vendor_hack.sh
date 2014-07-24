@@ -48,12 +48,6 @@ echo '$(call inherit-product, vendor/nameless/config/apns.mk)' >> ${c3po}/namele
 # Add nameless Product name
 echo "PRODUCT_NAME := nameless_${DEVICE}" >> ${c3po}/nameless_${DEVICE}.mk
 
-# Remove existing AndroidProducts.mk
-rm -rf ${c3po}/AndroidProducts.mk
-
-# Write our own AndroidProducts.mk and add nameless_device.mk
-echo "PRODUCT_MAKEFILES := "'$'"(LOCAL_DIR)/nameless_${DEVICE}.mk" >> ${c3po}/AndroidProducts.mk
-
 # Search for CM's Torch config and extract LED Path
 led=$(grep -oP '(?<=<string name="flashDevice">).*?(?=</string>)' ${yoda})
 if [ -z "$led" ]; then
