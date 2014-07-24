@@ -24,8 +24,6 @@ fi
 rm .repo/local_manifests/roomservice.xml
 
 # Fetch device from CM
-source vendor/nameless/vendorhack/cm_vendor_setup.sh
-vendor/nameless/vendorhack/cm_roomservice.py ${device}
 vendor/nameless/vendorhack/vendor_hack.sh ${device}
 
 # normal build process

@@ -20,6 +20,8 @@
 # Delete device/* when everything is done #
 ###########################################
 
+source vendor/nameless/vendorhack/cm_vendor_setup.sh
+
 DEVICE=$1
 rm .repo/local_manifests/roomservice.xml
 
