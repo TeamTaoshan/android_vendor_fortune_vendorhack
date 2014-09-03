@@ -33,8 +33,6 @@ r2d2=$(ls device/*/${DEVICE}/cm.mk)
 
 # Find the folder where the cm.mk is stored
 c3po=$(dirname ${r2d2})
-yoda=$(ls device/*/*/overlay/packages/apps/Torch/res/values/config.xml)
-chewbacca=$(dirname ${yoda})
 
 # Remove all CM Vendor config from cm.mk and save it to nameless_device.mk
 sed '/vendor\/cm\/config/d' ${r2d2} >  ${c3po}/nameless_${DEVICE}.mk
@@ -47,17 +45,3 @@ echo '$(call inherit-product, vendor/nameless/config/apns.mk)' >> ${c3po}/namele
 
 # Add nameless Product name
 echo "PRODUCT_NAME := nameless_${DEVICE}" >> ${c3po}/nameless_${DEVICE}.mk
-
-# Search for CM's Torch config and extract LED Path
-led=$(grep -oP '(?<=<string name="flashDevice">).*?(?=</string>)' ${yoda})
-if [ -z "$led" ]; then
-  echo ""
-  echo -e "\033[31mDevice dont have a sys Torch overlay\033[0m"
-  echo ""
-else
-  echo ""
-  echo -e "\033[32mFound a sys Torch overlay!\033[0m"
-  echo ""
-  mkdir -p ${chewbacca}/../../../Flashlight/res/values/
-  echo "<resources><string name="'"'"config_sysfs_torch"'"'">${led}</string></resources>" >> ${chewbacca}/../../../Flashlight/res/values/config.xml
-fi
