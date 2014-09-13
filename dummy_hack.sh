@@ -20,10 +20,10 @@
 # Delete device/* when everything is done #
 ###########################################
 
-DEVICE=$(echo $1 | sed -e 's/dummy_//g')
+DEVICE=$1
 rm .repo/local_manifests/roomservice.xml
 
-# Fetch device from CM
+# Fetch dummy tree from Nameless
 build/tools/roomservice.py ${DEVICE}
 
 # Find CM.mk file for device
