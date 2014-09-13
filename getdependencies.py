@@ -66,10 +66,10 @@ def add_to_manifest(repositories):
         lm = ElementTree.Element("manifest")
 
     for repository in repositories:
-        repo_account = repository['account']
+        repo_remote = repository['remote']
         repo_name = repository['repository']
         repo_target = repository['target_path']
-        repo_full = repo_account + '/' + repo_name
+        repo_full = repo_remote + '/' + repo_name
         repo_revision = repository['revision']
         if exists_in_tree(lm, repo_full):
             print '%s already exists' % repo_full
@@ -103,7 +103,7 @@ def fetch_dependencies(device):
         fetch_list = []
 
         for dependency in dependencies:
-            repo_full = dependency['account'] + "/" + dependency['repository']
+            repo_full = dependency['remote'] + "/" + dependency['repository']
             print '  Check for %s in local_manifest' % repo_full
             if not is_in_manifest(repo_full):
                 fetch_list.append(dependency)
