@@ -20,7 +20,6 @@
 # Delete device/* when everything is done #
 ###########################################
 
-source vendor/nameless/vendorhack/cm_vendor_setup.sh
 
 DEVICE=$1
 rm .repo/local_manifests/roomservice.xml
@@ -45,3 +44,5 @@ echo '$(call inherit-product, vendor/nameless/config/apns.mk)' >> ${c3po}/namele
 
 # Add nameless Product name
 echo "PRODUCT_NAME := nameless_${DEVICE}" >> ${c3po}/nameless_${DEVICE}.mk
+
+add_lunch_combo ${DEVICE}-userdebug
