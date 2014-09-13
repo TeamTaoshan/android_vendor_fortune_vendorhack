@@ -23,8 +23,8 @@
 DEVICE=$1
 rm .repo/local_manifests/roomservice.xml
 
-# Fetch dummy tree from Nameless
-build/tools/roomservice.py ${DEVICE}
+# Fetch device from CM
+vendor/nameless/vendorhack/getdependencies.py ${DEVICE}
 
 # Find CM.mk file for device
 r2d2=$(ls device/*/${DEVICE}/cm.mk)
@@ -43,3 +43,5 @@ echo '$(call inherit-product, vendor/nameless/config/apns.mk)' >> ${c3po}/namele
 
 # Add nameless Product name
 echo "PRODUCT_NAME := nameless_${DEVICE}" >> ${c3po}/nameless_${DEVICE}.mk
+
+add_lunch_combo ${DEVICE}-userdebug
