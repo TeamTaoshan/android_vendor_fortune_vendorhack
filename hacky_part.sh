@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Copyright (C) 2014 The NamelessRom Project
 # Copyright (C) 2014 Kilian von Pflugk
 #
@@ -20,11 +19,28 @@
 # Delete device/* when everything is done #
 ###########################################
 
+# Find CM.mk file for device
+r2d2=$(ls device/*/${DEVICE}/cm.mk)
 
-DEVICE=$1
-rm .repo/local_manifests/roomservice.xml
+# Find the folder where the cm.mk is stored
+c3po=$(dirname ${r2d2})
 
-# Fetch device from CM
-vendor/nameless/vendorhack/cm_roomservice.py ${DEVICE}
+# Search for cm's nfc_enhanced.mk and replace it
+for i in device/*/*/*.mk
+do
+ sed -i 's/vendor\/cm\/config\/nfc_enhanced.mk/vendor\/nameless\/config\/nfc_enhanced.mk/' $i
+done
 
-source vendor/nameless/vendorhack/hacky_part.sh
+# Remove all CM Vendor config from cm.mk and save it to nameless_device.mk
+sed '/vendor\/cm\/config/d' ${r2d2} >  ${c3po}/nameless_${DEVICE}.mk
+
+# Add nameless config
+echo 'include vendor/nameless/config/common.mk' >> ${c3po}/nameless_${DEVICE}.mk
+
+# Add nameless apns
+echo '$(call inherit-product, vendor/nameless/config/apns.mk)' >> ${c3po}/nameless_${DEVICE}.mk
+
+# Add nameless Product name
+echo "PRODUCT_NAME := nameless_${DEVICE}" >> ${c3po}/nameless_${DEVICE}.mk
+
+source vendor/nameless/vendorhack/fake_vendorsetup.sh ${DEVICE}

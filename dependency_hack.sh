@@ -26,22 +26,4 @@ rm .repo/local_manifests/roomservice.xml
 # Fetch device from CM
 vendor/nameless/vendorhack/getdependencies.py ${DEVICE}
 
-# Find CM.mk file for device
-r2d2=$(ls device/*/${DEVICE}/cm.mk)
-
-# Find the folder where the cm.mk is stored
-c3po=$(dirname ${r2d2})
-
-# Remove all CM Vendor config from cm.mk and save it to nameless_device.mk
-sed '/vendor\/cm\/config/d' ${r2d2} >  ${c3po}/nameless_${DEVICE}.mk
-
-# Add nameless config
-echo 'include vendor/nameless/config/common.mk' >> ${c3po}/nameless_${DEVICE}.mk
-
-# Add nameless apns
-echo '$(call inherit-product, vendor/nameless/config/apns.mk)' >> ${c3po}/nameless_${DEVICE}.mk
-
-# Add nameless Product name
-echo "PRODUCT_NAME := nameless_${DEVICE}" >> ${c3po}/nameless_${DEVICE}.mk
-
-add_lunch_combo ${DEVICE}-userdebug
+source vendor/nameless/vendorhack/hacky_part.sh
