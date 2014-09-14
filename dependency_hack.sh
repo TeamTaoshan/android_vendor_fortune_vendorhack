@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Copyright (C) 2014 The NamelessRom Project
 # Copyright (C) 2014 Kilian von Pflugk
 #
@@ -26,4 +25,4 @@ rm .repo/local_manifests/roomservice.xml
 # Fetch device from CM
 vendor/nameless/vendorhack/getdependencies.py ${DEVICE}
 
-source vendor/nameless/vendorhack/hacky_part.sh
+source vendor/nameless/vendorhack/hacky_part.sh ${DEVICE}

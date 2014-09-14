@@ -19,6 +19,8 @@
 # Delete device/* when everything is done #
 ###########################################
 
+DEVICE=$1
+
 # Find CM.mk file for device
 r2d2=$(ls device/*/${DEVICE}/cm.mk)
 
