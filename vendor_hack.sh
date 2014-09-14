@@ -33,6 +33,12 @@ r2d2=$(ls device/*/${DEVICE}/cm.mk)
 # Find the folder where the cm.mk is stored
 c3po=$(dirname ${r2d2})
 
+# Search for cm's nfc_enhanced.mk and replace it
+for i in device/*/*/*.mk
+do
+ sed -i 's/vendor\/cm\/config\/nfc_enhanced.mk/vendor\/nameless\/config\/nfc_enhanced.mk/' $i
+done
+
 # Remove all CM Vendor config from cm.mk and save it to nameless_device.mk
 sed '/vendor\/cm\/config/d' ${r2d2} >  ${c3po}/nameless_${DEVICE}.mk
 
