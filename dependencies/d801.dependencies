@@ -1,0 +1,14 @@
+[
+    {
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_lge_d801",
+        "target_path": "device/lge/d801",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "TheMuppets/proprietary_vendor_lge",
+        "target_path": "vendor/lge",
+        "revision":    "cm-11.0"
+    }
+]

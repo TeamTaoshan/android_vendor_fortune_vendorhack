@@ -13,4 +13,4 @@ Copy build.sh in main source folder
 
 now call ./build.sh [codename]
 
-dont forget the vendor blobs.
+you can modify depsgen.sh to build dependencies files

@@ -1,0 +1,14 @@
+[
+    {
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_lge_vs980",
+        "target_path": "device/lge/vs980",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "TheMuppets/proprietary_vendor_lge",
+        "target_path": "vendor/lge",
+        "revision":    "cm-11.0"
+    }
+]

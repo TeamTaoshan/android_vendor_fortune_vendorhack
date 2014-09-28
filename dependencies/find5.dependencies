@@ -1,0 +1,14 @@
+[
+    {
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_oppo_find5",
+        "target_path": "device/oppo/find5",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "TheMuppets/proprietary_vendor_oppo",
+        "target_path": "vendor/oppo",
+        "revision":    "cm-11.0"
+    }
+]

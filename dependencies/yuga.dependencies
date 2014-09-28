@@ -1,0 +1,14 @@
+[
+    {
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_sony_yuga",
+        "target_path": "device/sony/yuga",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "TheMuppets/proprietary_vendor_sony",
+        "target_path": "vendor/sony",
+        "revision":    "cm-11.0"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_asus_grouper",
+        "target_path": "device/asus/grouper",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "TheMuppets/proprietary_vendor_asus",
+        "target_path": "vendor/asus",
+        "revision":    "cm-11.0"
+    }
+]

@@ -23,12 +23,9 @@ fi
 
 rm .repo/local_manifests/roomservice.xml
 
-# Fetch device from CM
-vendor/nameless/vendorhack/vendor_hack.sh ${device}
-
 # normal build process
 . build/envsetup.sh
-lunch nameless_${device}-userdebug
+lunch nameless_${device}-userdebug true
 brunch ${device}
 
 # Delete device to prevent repo sync errors
