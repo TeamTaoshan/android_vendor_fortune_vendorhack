@@ -1,0 +1,8 @@
+[
+    {
+        "remote":     "NamelessRom",
+        "repository":  "android_device_oppo_find7u",
+        "target_path": "device/oppo/find7u",
+        "revision":    "android-4.4"
+    }
+]
