@@ -1,0 +1,22 @@
+[
+    {
+        "remote":     "NamelessRom",
+        "repository":  "android_device_oneplus_bacon",
+        "target_path": "device/oneplus/bacon",
+        "revision":    "android-4.4"
+    },
+    {
+        "remote":      "CrazyWeasel",
+        "repository":  "proprietary_vendor_oppo",
+        "target_path": "vendor/oppo",
+        "revision":    "android-4.4"
+    },
+    {
+        "remote":      "CrazyWeasel",
+        "repository":  "proprietary_vendor_oneplus",
+        "target_path": "vendor/oneplus",
+        "revision":    "android-4.4"
+    }
+
+
+]

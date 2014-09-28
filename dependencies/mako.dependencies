@@ -1,0 +1,14 @@
+[
+    {
+        "remote":      "NamelessRom",
+        "repository":  "android_device_lge_mako",
+        "target_path": "device/lge/mako",
+        "revision":    "android-4.4"
+    },
+    {
+        "remote":      "CrazyWeasel",
+        "repository":  "proprietary_vendor_lge",
+        "target_path": "vendor/lge",
+        "revision":    "android-4.4"
+    }
+]

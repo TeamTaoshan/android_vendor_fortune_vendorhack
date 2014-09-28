@@ -1,8 +1,14 @@
 [
     {
-        "remote":     "NamelessRom",
+        "remote":      "NamelessRom",
         "repository":  "android_device_oppo_find7u",
         "target_path": "device/oppo/find7u",
+        "revision":    "android-4.4"
+    },
+    {
+        "remote":      "CrazyWeasel",
+        "repository":  "proprietary_vendor_oppo",
+        "target_path": "vendor/oppo",
         "revision":    "android-4.4"
     }
 ]
