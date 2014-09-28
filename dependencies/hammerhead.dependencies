@@ -1,13 +1,13 @@
 [
     {
-        "remote":      "NamelessRom",
+        "remote":      "nameless",
         "repository":  "android_device_lge_hammerhead",
         "target_path": "device/lge/hammerhead",
         "revision":    "android-4.4"
     },
     {
-        "remote":      "CrazyWeasel",
-        "repository":  "proprietary_vendor_lge",
+        "remote":      "github",
+        "repository":  "CrazyWeasel/proprietary_vendor_lge",
         "target_path": "vendor/lge",
         "revision":    "android-4.4"
     }

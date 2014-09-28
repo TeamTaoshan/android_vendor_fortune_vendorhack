@@ -1,13 +1,13 @@
 [
     {
-        "remote":      "NamelessRom",
+        "remote":      "nameless",
         "repository":  "android_device_samsung_i9300",
         "target_path": "device/samsung/i9300",
         "revision":    "android-4.4"
     },
     {
-        "remote":      "CrazyWeasel",
-        "repository":  "proprietary_vendor_samsung",
+        "remote":      "github",
+        "repository":  "CrazyWeasel/proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
         "revision":    "android-4.4"
     }

@@ -71,12 +71,14 @@ def add_to_manifest(repositories):
         repo_target = repository['target_path']
         repo_full = repo_remote + '/' + repo_name
         repo_revision = repository['revision']
-        if exists_in_tree(lm, repo_full):
-            print '%s already exists' % repo_full
-            continue
+        if is_in_manifest(repo_full):
+	   print 'Adding remove-project: %s' % (repo_name)
+	   project = ElementTree.Element("remove-project", attrib = { "name": repo_name })
+	   lm.append(project)
+        else:
 
-        print 'Adding dependency: %s -> %s' % (repo_full, repo_target)
-        project = ElementTree.Element("project", attrib = { "path": repo_target,
+           print 'Adding dependency: %s -> %s' % (repo_full, repo_target)
+           project = ElementTree.Element("project", attrib = { "path": repo_target,
             "remote": "github", "name": repo_full, "revision": repo_revision })
 
         if 'branch' in repository:
@@ -105,11 +107,8 @@ def fetch_dependencies(device):
         for dependency in dependencies:
             repo_full = dependency['remote'] + "/" + dependency['repository']
             print '  Check for %s in local_manifest' % repo_full
-            if not is_in_manifest(repo_full):
-                fetch_list.append(dependency)
-                syncable_repos.append(dependency['target_path'])
-            else:
-                print '    %s already in local_manifest' % repo_full
+            fetch_list.append(dependency)
+            syncable_repos.append(dependency['target_path'])
 
         dependencies_file.close()
 

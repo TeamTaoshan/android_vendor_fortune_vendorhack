@@ -1,8 +1,14 @@
 [
     {
-        "remote":      "LegacyXperia",
-        "repository":   "android_device_semc_satsuma",
-        "target_path":  "device/semc/satsuma",
+        "remote":      "github",
+        "repository":  "LegacyXperia/android_device_semc_satsuma",
+        "target_path": "device/semc/satsuma",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":       "github",
+        "repository":   "LegacyXperia/android_hardware_qcom_audio-caf",
+        "target_path":  "hardware/qcom/audio-caf",
         "revision":     "cm-11.0"
     },
     {
@@ -28,5 +34,11 @@
         "repository":   "android_hardware_sony_DASH",
         "target_path":  "hardware/sony/DASH",
         "revision":     "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "LegacyXperia/proprietary_vendor_semc",
+        "target_path": "vendor/semc",
+        "revision":    "android-4.4"
     }
 ]
