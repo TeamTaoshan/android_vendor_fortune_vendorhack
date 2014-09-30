@@ -2,8 +2,8 @@
     {
         "vendorhack":  "true",
         "remote":      "github",
-        "repository":  "CyanogenMod/android_device_asus_grouper",
-        "target_path": "device/asus/grouper",
+        "repository":  "CyanogenMod/android_device_asus_tilapia",
+        "target_path": "device/asus/tilapia",
         "revision":    "cm-11.0"
     },
     {

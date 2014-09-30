@@ -1,5 +1,6 @@
 [
     {
+        "vendorhack":  "true",
         "remote":      "github",
         "repository":  "CyanogenMod/android_device_htc_m8",
         "target_path": "device/htc/m8",

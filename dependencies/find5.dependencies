@@ -1,5 +1,6 @@
 [
     {
+        "vendorhack":  "true",
         "remote":      "github",
         "repository":  "CyanogenMod/android_device_oppo_find5",
         "target_path": "device/oppo/find5",

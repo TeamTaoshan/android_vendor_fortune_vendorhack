@@ -1,5 +1,6 @@
 [
     {
+        "vendorhack":  "true",
         "remote":      "github",
         "repository":  "CyanogenMod/android_device_lge_d800",
         "target_path": "device/lge/d800",

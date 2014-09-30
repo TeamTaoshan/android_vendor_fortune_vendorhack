@@ -1,5 +1,6 @@
 [
     {
+        "vendorhack":  "true",
         "remote":      "github",
         "repository":  "CyanogenMod/android_device_xiaomi_aries",
         "target_path": "device/xiaomi/aries",

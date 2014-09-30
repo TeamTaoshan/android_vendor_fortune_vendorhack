@@ -2,8 +2,8 @@
     {
         "vendorhack":  "true",
         "remote":      "github",
-        "repository":  "CyanogenMod/android_device_samsung_hlte",
-        "target_path": "device/samsung/hlte",
+        "repository":  "CyanogenMod/android_device_samsung_maguro",
+        "target_path": "device/samsung/maguro",
         "revision":    "cm-11.0"
     },
     {

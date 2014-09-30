@@ -1,5 +1,6 @@
 [
     {
+        "vendorhack":  "true",
         "remote":      "github",
         "repository":  "CyanogenMod/android_device_samsung_d2lte",
         "target_path": "device/samsung/d2lte",
