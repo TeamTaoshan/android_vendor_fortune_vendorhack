@@ -1,5 +1,6 @@
 [
     {
+        "vendorhack":  "true",
         "remote":      "github",
         "repository":  "LegacyXperia/android_device_semc_anzu",
         "target_path": "device/semc/anzu",
