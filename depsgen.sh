@@ -5,6 +5,7 @@ do
 (cat << EOF) > $DEVICE.dependencies
 [
     {
+        "vendorhack":  "true",
         "remote":      "github",
         "repository":  "CyanogenMod/android_device_${VENDOR}_$DEVICE",
         "target_path": "device/$VENDOR/$DEVICE",

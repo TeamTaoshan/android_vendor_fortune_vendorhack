@@ -25,7 +25,7 @@ rm .repo/local_manifests/roomservice.xml
 
 # normal build process
 . build/envsetup.sh
-lunch nameless_${device}-userdebug true
+lunch nameless_${device}-userdebug
 brunch ${device}
 
 # Delete device to prevent repo sync errors
