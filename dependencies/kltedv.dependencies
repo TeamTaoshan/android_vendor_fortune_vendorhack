@@ -1,0 +1,15 @@
+[
+    {
+        "vendorhack":  "true",
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_samsung_kltedv",
+        "target_path": "device/samsung/kltedv",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "TheMuppets/proprietary_vendor_samsung",
+        "target_path": "vendor/samsung",
+        "revision":    "cm-11.0"
+    }
+]
