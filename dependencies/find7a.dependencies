@@ -1,0 +1,14 @@
+[
+    {
+        "remote":      "nameless",
+        "repository":  "android_device_oppo_find7a",
+        "target_path": "device/oppo/find7a",
+        "revision":    "android-4.4"
+    },
+    {
+        "remote":      "github",
+        "repository":  "CrazyWeasel/proprietary_vendor_oppo",
+        "target_path": "vendor/oppo",
+        "revision":    "android-4.4"
+    }
+]
