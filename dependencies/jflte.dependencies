@@ -1,14 +1,15 @@
 [
     {
-        "remote":      "nameless",
-        "repository":  "android_device_samsung_jflte",
+        "vendorhack":  "true",
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_samsung_jflte",
         "target_path": "device/samsung/jflte",
-        "revision":    "android-4.4"
+        "revision":    "cm-11.0"
     },
     {
         "remote":      "github",
-        "repository":  "CrazyWeasel/proprietary_vendor_samsung",
+        "repository":  "TheMuppets/proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
-        "revision":    "android-4.4"
+        "revision":    "cm-11.0"
     }
 ]
