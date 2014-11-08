@@ -1,0 +1,15 @@
+[
+    {
+        "vendorhack":  "true",
+        "remote":      "github",
+        "repository":  "frogfire/android_device_samsung_klteduesxx",
+        "target_path": "device/samsung/klteduesxx",
+        "revision":    "cm-11.0"
+    },
+    {
+        "remote":      "github",
+        "repository":  "frogfire/proprietary_vendor_samsung",
+        "target_path": "vendor/samsung",
+        "revision":    "cm-11.0"
+    }
+]
