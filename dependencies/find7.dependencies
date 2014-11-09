@@ -1,7 +1,7 @@
 [
     {
-        "remote":      "nameless",
-        "repository":  "android_device_oppo_find7",
+        "remote":      "github",
+        "repository":  "NamelessRom/android_device_oppo_find7",
         "target_path": "device/oppo/find7",
         "revision":    "android-4.4"
     },
