@@ -1,14 +1,14 @@
 [
     {
-        "remote":      "nameless",
-        "repository":  "android_device_samsung_n7100",
+        "remote":      "github",
+        "repository":  "NamelessRom/android_device_samsung_n7100",
         "target_path": "device/samsung/n7100",
-        "revision":    "android-4.4"
+        "revision":    "n-2.0"
     },
     {
         "remote":      "github",
         "repository":  "CrazyWeasel/proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
-        "revision":    "android-4.4"
+        "revision":    "n-2.0"
     }
 ]
