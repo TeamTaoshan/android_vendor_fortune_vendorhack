@@ -1,14 +1,14 @@
 [
     {
         "remote":      "github",
-        "repository":  "NamelessRom/android_device_lge_hammerhead",
+        "repository":  "Fortune-OS/android_device_lge_hammerhead",
         "target_path": "device/lge/hammerhead",
-        "revision":    "n-2.0"
+        "revision":    "android-5.0"
     },
     {
         "remote":      "github",
-        "repository":  "CrazyWeasel/proprietary_vendor_lge",
+        "repository":  "DonkeyCoyote/proprietary_vendor_lge",
         "target_path": "vendor/lge",
-        "revision":    "n-2.0"
+        "revision":    "android-5.0"
     }
 ]

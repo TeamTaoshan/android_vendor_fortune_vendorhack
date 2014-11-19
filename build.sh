@@ -1,6 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2014 The NamelessRom Project
 # Copyright (C) 2014 Kilian von Pflugk
+# Modified for Fortune-OS
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,7 +26,7 @@ rm .repo/local_manifests/roomservice.xml
 
 # normal build process
 . build/envsetup.sh
-lunch nameless_${device}-userdebug
+lunch fortune_${device}-userdebug
 brunch ${device}
 
 # Delete device to prevent repo sync errors
