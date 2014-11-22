@@ -1,9 +1,9 @@
 [
     {
         "remote":      "github",
-        "repository":  "NamelessRom/android_device_samsung_n7100",
+        "repository":  "Fortune-OS/android_device_samsung_n7100",
         "target_path": "device/samsung/n7100",
-        "revision":    "n-2.0"
+        "revision":    "android-5.0"
     },
     {
         "remote":      "github",
